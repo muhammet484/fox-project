@@ -1,0 +1,21 @@
+* pls dont change anything in "maker.cs"
+
+* if u will add a clone to scene, u mast add that clones (game object) to mAIN_TRANSPORTER_SCRIPT.allStuffs. example:
+
+//u mast create an object for it
+MAIN_TRANSPORTER_SCRIPT mAIN_TRANSPORTER_SCRIPT; 
+
+void Start () 
+{
+	//tooken the class
+	mAIN_TRANSPORTER_SCRIPT = (MAIN_TRANSPORTER_SCRIPT)FindObjectOfType(typeof(MAIN_TRANSPORTER_SCRIPT)); 
+}
+
+// u can use this code for adding a game object to mAIN_TRANSPORTER_SCRIPT.allStuffs List
+mAIN_TRANSPORTER_SCRIPT.allStuffs.Add(game_object_name);
+
+//erase something in list
+mAIN_TRANSPORTER_SCRIPT.rfl(game_object_name);
+//rfl = Remove From List
+
+* i freezed the x axis of player of rigidbody. u can open it on rigidbody component
